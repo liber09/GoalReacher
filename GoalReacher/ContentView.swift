@@ -27,11 +27,13 @@ struct ContentView: View {
                         Image("star")
                             .resizable()
                             .frame(width: 25, height: 25)
+                            .padding(20)
                         
                         Text("Morning")
                             .font(.system(size: 36))
                         
                         Image(systemName: "arrow.forward")
+                            .padding(20)
                         
                     }
                     .background(Color.white)
@@ -39,11 +41,13 @@ struct ContentView: View {
                         Image("star")
                             .resizable()
                             .frame(width: 25, height: 25)
+                            .padding(20)
                         
                         Text("Evening")
                             .font(.system(size: 36))
                         
                         Image(systemName: "arrow.forward")
+                            .padding(20)
                         
                     }
                     .background(Color.white)
@@ -51,15 +55,26 @@ struct ContentView: View {
                         Image("star")
                             .resizable()
                             .frame(width: 25, height: 25)
+                            .padding(20)
                         
                         Text("Must Do Today")
                             .font(.system(size: 36))
                         
                         Image(systemName: "arrow.forward")
+                            .padding(20)
                     }
                     .background(Color.white)
                     
+                    Button(action: {
+                        print("Add ToDo button pressed")
+                    }){
+                        Image(systemName: "plus.diamond.fill")
+                            .resizable()
+                            .frame(width: 60, height: 60)
+                            .foregroundColor(Color.white)
+                    }
                 }
+                
             }
         }
     }
