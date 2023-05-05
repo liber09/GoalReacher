@@ -9,6 +9,17 @@ import SwiftUI
 
 struct MustDoTodayView: View {
     var body: some View {
+        NavigationView{
+            Text("")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar{
+                    ToolbarItem(placement: .principal) {
+                        VStack{
+                            Text("Must Do Today").font(.headline)
+                        }
+                    }
+                }
+        }
         Text("Hello, Today!")
     }
 }
