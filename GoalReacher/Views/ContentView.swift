@@ -77,9 +77,7 @@ struct ContentView: View {
                             }
                             .background(Color.white)
                         }
-                        Button(action: {
-                            print("Add ToDo button pressed")
-                        }){
+                        NavigationLink(destination: AddNew()) {
                             Image(systemName: "plus.diamond.fill")
                                 .resizable()
                                 .frame(width: 60, height: 60)

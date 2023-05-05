@@ -18,6 +18,7 @@
 		5C884E182A05366E0071BFE8 /* MorningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E172A05366E0071BFE8 /* MorningView.swift */; };
 		5C884E1A2A0536860071BFE8 /* EveningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E192A0536860071BFE8 /* EveningView.swift */; };
 		5C884E1C2A0536AA0071BFE8 /* MustDoTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E1B2A0536AA0071BFE8 /* MustDoTodayView.swift */; };
+		5C884E1E2A0588DC0071BFE8 /* AddNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E1D2A0588DC0071BFE8 /* AddNew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5C884E172A05366E0071BFE8 /* MorningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningView.swift; sourceTree = "<group>"; };
 		5C884E192A0536860071BFE8 /* EveningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningView.swift; sourceTree = "<group>"; };
 		5C884E1B2A0536AA0071BFE8 /* MustDoTodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoTodayView.swift; sourceTree = "<group>"; };
+		5C884E1D2A0588DC0071BFE8 /* AddNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				5C884E172A05366E0071BFE8 /* MorningView.swift */,
 				5C884E192A0536860071BFE8 /* EveningView.swift */,
 				5C884E1B2A0536AA0071BFE8 /* MustDoTodayView.swift */,
+				5C884E1D2A0588DC0071BFE8 /* AddNew.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				5C884E092A050BD20071BFE8 /* Persistence.swift in Sources */,
 				5C884E182A05366E0071BFE8 /* MorningView.swift in Sources */,
+				5C884E1E2A0588DC0071BFE8 /* AddNew.swift in Sources */,
 				5C884E1A2A0536860071BFE8 /* EveningView.swift in Sources */,
 				5C884E1C2A0536AA0071BFE8 /* MustDoTodayView.swift in Sources */,
 				5C884E0C2A050BD20071BFE8 /* GoalReacher.xcdatamodeld in Sources */,
