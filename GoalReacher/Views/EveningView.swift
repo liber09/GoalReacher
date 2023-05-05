@@ -9,6 +9,17 @@ import SwiftUI
 
 struct EveningView: View {
     var body: some View {
+        NavigationView{
+            Text("")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar{
+                    ToolbarItem(placement: .principal) {
+                        VStack{
+                            Text("Evening").font(.headline)
+                        }
+                    }
+                }
+        }
         Text("Hello, Evening!")
     }
 }
