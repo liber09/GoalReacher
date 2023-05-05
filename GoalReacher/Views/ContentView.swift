@@ -24,22 +24,24 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 900, height: 900)
                     VStack(alignment: .center, spacing: 30){
-                        HStack{
-                            Image("star")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .padding(20)
-                            NavigationLink(destination: MorningView()) {
-                                Text("Morning")
-                                    .font(.system(size: 36))
+                        NavigationLink(destination: MorningView()) {
+                            HStack{
+                                Image("star")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .padding(20)
+                                
+                                    Text("Morning")
+                                        .font(.system(size: 36))
+                                        .foregroundColor(Color.black)
+                                
+                                Image(systemName: "arrow.forward")
+                                    .padding(20)
                                     .foregroundColor(Color.black)
+                                
                             }
-                            
-                            Image(systemName: "arrow.forward")
-                                .padding(20)
-                            
+                            .background(Color.white)
                         }
-                        .background(Color.white)
                         HStack{
                             Image("star")
                                 .resizable()
@@ -54,6 +56,7 @@ struct ContentView: View {
                             
                         }
                         .background(Color.white)
+                        
                         HStack{
                             Image("star")
                                 .resizable()
