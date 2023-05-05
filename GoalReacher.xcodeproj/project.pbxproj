@@ -19,6 +19,7 @@
 		5C884E1A2A0536860071BFE8 /* EveningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E192A0536860071BFE8 /* EveningView.swift */; };
 		5C884E1C2A0536AA0071BFE8 /* MustDoTodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E1B2A0536AA0071BFE8 /* MustDoTodayView.swift */; };
 		5C884E1E2A0588DC0071BFE8 /* AddNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E1D2A0588DC0071BFE8 /* AddNew.swift */; };
+		5C884E212A058E500071BFE8 /* GoalReacherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E202A058E500071BFE8 /* GoalReacherVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5C884E192A0536860071BFE8 /* EveningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningView.swift; sourceTree = "<group>"; };
 		5C884E1B2A0536AA0071BFE8 /* MustDoTodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoTodayView.swift; sourceTree = "<group>"; };
 		5C884E1D2A0588DC0071BFE8 /* AddNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNew.swift; sourceTree = "<group>"; };
+		5C884E202A058E500071BFE8 /* GoalReacherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalReacherVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		5C884DFE2A050BCF0071BFE8 /* GoalReacher */ = {
 			isa = PBXGroup;
 			children = (
+				5C884E1F2A058E260071BFE8 /* ViewModel */,
 				5C884E162A0536400071BFE8 /* Views */,
 				5C884DFF2A050BCF0071BFE8 /* GoalReacherApp.swift */,
 				5C884E032A050BD20071BFE8 /* Assets.xcassets */,
@@ -97,6 +100,14 @@
 				5C884E1D2A0588DC0071BFE8 /* AddNew.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5C884E1F2A058E260071BFE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5C884E202A058E500071BFE8 /* GoalReacherVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C884E212A058E500071BFE8 /* GoalReacherVM.swift in Sources */,
 				5C884E092A050BD20071BFE8 /* Persistence.swift in Sources */,
 				5C884E182A05366E0071BFE8 /* MorningView.swift in Sources */,
 				5C884E1E2A0588DC0071BFE8 /* AddNew.swift in Sources */,

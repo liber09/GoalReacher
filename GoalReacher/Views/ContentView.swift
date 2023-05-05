@@ -10,6 +10,7 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    let GoalReacherVm = GoalReacherVM()
     
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
@@ -24,6 +25,9 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 900, height: 900)
                     VStack(alignment: .center, spacing: 30){
+                        Text(GoalReacherVm.getInfoAboutToday())
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 20))
                         NavigationLink(destination: MorningView()) {
                             HStack{
                                 Image("star")
