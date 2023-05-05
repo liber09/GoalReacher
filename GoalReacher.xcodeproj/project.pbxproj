@@ -14,6 +14,7 @@
 		5C884E092A050BD20071BFE8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E082A050BD20071BFE8 /* Persistence.swift */; };
 		5C884E0C2A050BD20071BFE8 /* GoalReacher.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E0A2A050BD20071BFE8 /* GoalReacher.xcdatamodeld */; };
 		5C884E132A050C630071BFE8 /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C884E122A050C630071BFE8 /* space.png */; };
+		5C884E152A051EE90071BFE8 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C884E142A051EE90071BFE8 /* star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5C884E082A050BD20071BFE8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5C884E0B2A050BD20071BFE8 /* GoalReacher.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoalReacher.xcdatamodel; sourceTree = "<group>"; };
 		5C884E122A050C630071BFE8 /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = space.png; path = Assets.xcassets/space.png; sourceTree = "<group>"; };
+		5C884E142A051EE90071BFE8 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = Assets.xcassets/star.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5C884DFF2A050BCF0071BFE8 /* GoalReacherApp.swift */,
 				5C884E012A050BCF0071BFE8 /* ContentView.swift */,
 				5C884E032A050BD20071BFE8 /* Assets.xcassets */,
+				5C884E142A051EE90071BFE8 /* star.png */,
 				5C884E122A050C630071BFE8 /* space.png */,
 				5C884E082A050BD20071BFE8 /* Persistence.swift */,
 				5C884E0A2A050BD20071BFE8 /* GoalReacher.xcdatamodeld */,
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C884E072A050BD20071BFE8 /* Preview Assets.xcassets in Resources */,
+				5C884E152A051EE90071BFE8 /* star.png in Resources */,
 				5C884E132A050C630071BFE8 /* space.png in Resources */,
 				5C884E042A050BD20071BFE8 /* Assets.xcassets in Resources */,
 			);

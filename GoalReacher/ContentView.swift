@@ -17,7 +17,51 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     
     var body: some View {
-            Image("space")
+        VStack{
+            ZStack{
+                Image("space")
+                    .resizable()
+                    .frame(width: 900, height: 900)
+                VStack(alignment: .center, spacing: 30){
+                    HStack{
+                        Image("star")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                        
+                        Text("Morning")
+                            .font(.system(size: 36))
+                        
+                        Image(systemName: "arrow.forward")
+                        
+                    }
+                    .background(Color.white)
+                    HStack{
+                        Image("star")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                        
+                        Text("Evening")
+                            .font(.system(size: 36))
+                        
+                        Image(systemName: "arrow.forward")
+                        
+                    }
+                    .background(Color.white)
+                    HStack{
+                        Image("star")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                        
+                        Text("Must Do Today")
+                            .font(.system(size: 36))
+                        
+                        Image(systemName: "arrow.forward")
+                    }
+                    .background(Color.white)
+                    
+                }
+            }
+        }
     }
 }
 
