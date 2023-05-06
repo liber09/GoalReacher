@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct GoalReacherApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
