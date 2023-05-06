@@ -24,6 +24,16 @@
 		5CE3BEDA2A06BAB00038E8B5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE3BED92A06BAB00038E8B5 /* FirebaseFirestore */; };
 		5CE3BEDC2A06BAB00038E8B5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE3BEDB2A06BAB00038E8B5 /* FirebaseFirestoreSwift */; };
 		5CE3BEDE2A06C5D80038E8B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3BEDD2A06C5D80038E8B5 /* GoogleService-Info.plist */; };
+		5CE3BEE12A06CAD80038E8B5 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE02A06CAD80038E8B5 /* ToDoItem.swift */; };
+		5CE3BEE32A06CB340038E8B5 /* AddNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */; };
+		5CE3BEE52A06CB4F0038E8B5 /* MorningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */; };
+		5CE3BEE72A06CB6F0038E8B5 /* EveningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */; };
+		5CE3BEE92A06CB820038E8B5 /* MustDoTodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE82A06CB820038E8B5 /* MustDoTodayViewModel.swift */; };
+		5CE3BEEB2A06CD0D0038E8B5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEEA2A06CD0D0038E8B5 /* LoginView.swift */; };
+		5CE3BEED2A06CDF20038E8B5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEEC2A06CDF20038E8B5 /* ProfileView.swift */; };
+		5CE3BEEF2A06CE0F0038E8B5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */; };
+		5CE3BEF12A06D2F60038E8B5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEF02A06D2F60038E8B5 /* HeaderView.swift */; };
+		5CE3BEF32A06DB8B0038E8B5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEF22A06DB8B0038E8B5 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +52,16 @@
 		5C884E1D2A0588DC0071BFE8 /* AddNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNew.swift; sourceTree = "<group>"; };
 		5C884E202A058E500071BFE8 /* GoalReacherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalReacherVM.swift; sourceTree = "<group>"; };
 		5CE3BEDD2A06C5D80038E8B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/GoalReacher/GoalReacher/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5CE3BEE02A06CAD80038E8B5 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoItem.swift; path = ../../../../../../ToDoItem.swift; sourceTree = "<group>"; };
+		5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNewViewModel.swift; path = ../../../../../../AddNewViewModel.swift; sourceTree = "<group>"; };
+		5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MorningViewModel.swift; path = ../../../../../../MorningViewModel.swift; sourceTree = "<group>"; };
+		5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EveningViewModel.swift; path = ../../../../../../EveningViewModel.swift; sourceTree = "<group>"; };
+		5CE3BEE82A06CB820038E8B5 /* MustDoTodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MustDoTodayViewModel.swift; path = ../../../../../../MustDoTodayViewModel.swift; sourceTree = "<group>"; };
+		5CE3BEEA2A06CD0D0038E8B5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/GoalReacher/GoalReacher/Views/LoginView.swift"; sourceTree = "<group>"; };
+		5CE3BEEC2A06CDF20038E8B5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		5CE3BEF02A06D2F60038E8B5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5CE3BEF22A06DB8B0038E8B5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +97,9 @@
 		5C884DFE2A050BCF0071BFE8 /* GoalReacher */ = {
 			isa = PBXGroup;
 			children = (
+				5CE3BEDF2A06C9350038E8B5 /* Models */,
 				5CE3BEDD2A06C5D80038E8B5 /* GoogleService-Info.plist */,
-				5C884E1F2A058E260071BFE8 /* ViewModel */,
+				5C884E1F2A058E260071BFE8 /* ViewModels */,
 				5C884E162A0536400071BFE8 /* Views */,
 				5C884DFF2A050BCF0071BFE8 /* GoalReacherApp.swift */,
 				5C884E032A050BD20071BFE8 /* Assets.xcassets */,
@@ -107,16 +128,33 @@
 				5C884E192A0536860071BFE8 /* EveningView.swift */,
 				5C884E1B2A0536AA0071BFE8 /* MustDoTodayView.swift */,
 				5C884E1D2A0588DC0071BFE8 /* AddNew.swift */,
+				5CE3BEEA2A06CD0D0038E8B5 /* LoginView.swift */,
+				5CE3BEEC2A06CDF20038E8B5 /* ProfileView.swift */,
+				5CE3BEF02A06D2F60038E8B5 /* HeaderView.swift */,
+				5CE3BEF22A06DB8B0038E8B5 /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		5C884E1F2A058E260071BFE8 /* ViewModel */ = {
+		5C884E1F2A058E260071BFE8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				5C884E202A058E500071BFE8 /* GoalReacherVM.swift */,
+				5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */,
+				5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */,
+				5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */,
+				5CE3BEE82A06CB820038E8B5 /* MustDoTodayViewModel.swift */,
+				5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5CE3BEDF2A06C9350038E8B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3BEE02A06CAD80038E8B5 /* ToDoItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,12 +238,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CE3BEE92A06CB820038E8B5 /* MustDoTodayViewModel.swift in Sources */,
+				5CE3BEF12A06D2F60038E8B5 /* HeaderView.swift in Sources */,
 				5C884E212A058E500071BFE8 /* GoalReacherVM.swift in Sources */,
 				5C884E092A050BD20071BFE8 /* Persistence.swift in Sources */,
+				5CE3BEEB2A06CD0D0038E8B5 /* LoginView.swift in Sources */,
+				5CE3BEE12A06CAD80038E8B5 /* ToDoItem.swift in Sources */,
 				5C884E182A05366E0071BFE8 /* MorningView.swift in Sources */,
 				5C884E1E2A0588DC0071BFE8 /* AddNew.swift in Sources */,
+				5CE3BEF32A06DB8B0038E8B5 /* RegisterView.swift in Sources */,
+				5CE3BEE32A06CB340038E8B5 /* AddNewViewModel.swift in Sources */,
+				5CE3BEED2A06CDF20038E8B5 /* ProfileView.swift in Sources */,
 				5C884E1A2A0536860071BFE8 /* EveningView.swift in Sources */,
+				5CE3BEE52A06CB4F0038E8B5 /* MorningViewModel.swift in Sources */,
+				5CE3BEE72A06CB6F0038E8B5 /* EveningViewModel.swift in Sources */,
 				5C884E1C2A0536AA0071BFE8 /* MustDoTodayView.swift in Sources */,
+				5CE3BEEF2A06CE0F0038E8B5 /* ProfileViewModel.swift in Sources */,
 				5C884E0C2A050BD20071BFE8 /* GoalReacher.xcdatamodeld in Sources */,
 				5C884E022A050BCF0071BFE8 /* ContentView.swift in Sources */,
 				5C884E002A050BCF0071BFE8 /* GoalReacherApp.swift in Sources */,

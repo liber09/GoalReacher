@@ -18,8 +18,10 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
     
     var body: some View {
-        NavigationStack{
-            VStack{
+        //NavigationStack{
+          //  VStack{
+                LoginView()
+                /*
                 ZStack{
                     Image("space")
                         .resizable()
@@ -89,10 +91,10 @@ struct ContentView: View {
                         }
                     }
                     
-                }
-            }
+                 }
+                 }
         }
-        
+                 */
     }
 }
 
