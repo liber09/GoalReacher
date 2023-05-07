@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C50F0E82A0789D200711196 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0E72A0789D200711196 /* LoginViewModel.swift */; };
+		5C50F0EA2A07989100711196 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0E92A07989100711196 /* RegisterViewModel.swift */; };
 		5C884E002A050BCF0071BFE8 /* GoalReacherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884DFF2A050BCF0071BFE8 /* GoalReacherApp.swift */; };
 		5C884E022A050BCF0071BFE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E012A050BCF0071BFE8 /* ContentView.swift */; };
 		5C884E042A050BD20071BFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C884E032A050BD20071BFE8 /* Assets.xcassets */; };
@@ -34,9 +36,12 @@
 		5CE3BEEF2A06CE0F0038E8B5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */; };
 		5CE3BEF12A06D2F60038E8B5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEF02A06D2F60038E8B5 /* HeaderView.swift */; };
 		5CE3BEF32A06DB8B0038E8B5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEF22A06DB8B0038E8B5 /* RegisterView.swift */; };
+		5CE3BEF72A06E61C0038E8B5 /* GRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEF62A06E61C0038E8B5 /* GRButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C50F0E72A0789D200711196 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5C50F0E92A07989100711196 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		5C884DFC2A050BCF0071BFE8 /* GoalReacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalReacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C884DFF2A050BCF0071BFE8 /* GoalReacherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalReacherApp.swift; sourceTree = "<group>"; };
 		5C884E012A050BCF0071BFE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		5CE3BEF02A06D2F60038E8B5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		5CE3BEF22A06DB8B0038E8B5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		5CE3BEF62A06E61C0038E8B5 /* GRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 				5CE3BEEC2A06CDF20038E8B5 /* ProfileView.swift */,
 				5CE3BEF02A06D2F60038E8B5 /* HeaderView.swift */,
 				5CE3BEF22A06DB8B0038E8B5 /* RegisterView.swift */,
+				5CE3BEF62A06E61C0038E8B5 /* GRButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +152,8 @@
 				5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */,
 				5CE3BEE82A06CB820038E8B5 /* MustDoTodayViewModel.swift */,
 				5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */,
+				5C50F0E72A0789D200711196 /* LoginViewModel.swift */,
+				5C50F0E92A07989100711196 /* RegisterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -240,10 +249,12 @@
 			files = (
 				5CE3BEE92A06CB820038E8B5 /* MustDoTodayViewModel.swift in Sources */,
 				5CE3BEF12A06D2F60038E8B5 /* HeaderView.swift in Sources */,
+				5C50F0E82A0789D200711196 /* LoginViewModel.swift in Sources */,
 				5C884E212A058E500071BFE8 /* GoalReacherVM.swift in Sources */,
 				5C884E092A050BD20071BFE8 /* Persistence.swift in Sources */,
 				5CE3BEEB2A06CD0D0038E8B5 /* LoginView.swift in Sources */,
 				5CE3BEE12A06CAD80038E8B5 /* ToDoItem.swift in Sources */,
+				5CE3BEF72A06E61C0038E8B5 /* GRButton.swift in Sources */,
 				5C884E182A05366E0071BFE8 /* MorningView.swift in Sources */,
 				5C884E1E2A0588DC0071BFE8 /* AddNew.swift in Sources */,
 				5CE3BEF32A06DB8B0038E8B5 /* RegisterView.swift in Sources */,
@@ -251,6 +262,7 @@
 				5CE3BEED2A06CDF20038E8B5 /* ProfileView.swift in Sources */,
 				5C884E1A2A0536860071BFE8 /* EveningView.swift in Sources */,
 				5CE3BEE52A06CB4F0038E8B5 /* MorningViewModel.swift in Sources */,
+				5C50F0EA2A07989100711196 /* RegisterViewModel.swift in Sources */,
 				5CE3BEE72A06CB6F0038E8B5 /* EveningViewModel.swift in Sources */,
 				5C884E1C2A0536AA0071BFE8 /* MustDoTodayView.swift in Sources */,
 				5CE3BEEF2A06CE0F0038E8B5 /* ProfileViewModel.swift in Sources */,
