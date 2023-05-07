@@ -9,18 +9,18 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-    let GoalReacherVm = GoalReacherVM()
-    
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-    
+
+    //let GoalReacherVm = GoalReacherVM()
+    @StateObject var viewModel = ContentViewModel()
+
     var body: some View {
         //NavigationStack{
           //  VStack{
-                LoginView()
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty{
+            MorningView()
+        }else{
+            LoginView()
+        }
                 /*
                 ZStack{
                     Image("space")

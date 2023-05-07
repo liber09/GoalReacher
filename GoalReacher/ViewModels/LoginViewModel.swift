@@ -16,6 +16,7 @@ class LoginViewModel: ObservableObject{
     init() {}
     
     func login(){
+        
         guard validate() else{
             return
         }
