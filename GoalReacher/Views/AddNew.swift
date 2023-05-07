@@ -8,25 +8,12 @@
 import SwiftUI
 
 struct AddNew: View {
+    @EnvironmentObject var toDoItemModel: ToDoViewModel
     var body: some View {
         NavigationView{
-            VStack{
-                ZStack{
-                    Image("space")
-                        .resizable()
-                        .frame(width: 1000, height: 1000)
-                    Text("")
-                        .navigationBarTitleDisplayMode(.inline)
-                        .toolbar{
-                            ToolbarItem(placement: .principal) {
-                                VStack{
-                                    Text("Add New").font(.headline)
-                                        .foregroundColor(Color.white)
-                                }
-                            }
-                        }
-                }
-                Text("Hello, AddNew!")
+            VStack(spacing: 15){
+                TextField("Title", text: $toDoItemModel.title)
+            
             }
         }
     }

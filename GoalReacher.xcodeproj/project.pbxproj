@@ -13,6 +13,7 @@
 		5C50F0F02A07AA7700711196 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0EF2A07AA7700711196 /* Extensions.swift */; };
 		5C50F0F22A07AEB600711196 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0F12A07AEB600711196 /* ContentViewModel.swift */; };
 		5C50F0F42A07D89C00711196 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0F32A07D89C00711196 /* MainView.swift */; };
+		5C50F0F92A07EA3E00711196 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0F82A07EA3E00711196 /* ToDoViewModel.swift */; };
 		5C884E002A050BCF0071BFE8 /* GoalReacherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884DFF2A050BCF0071BFE8 /* GoalReacherApp.swift */; };
 		5C884E022A050BCF0071BFE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E012A050BCF0071BFE8 /* ContentView.swift */; };
 		5C884E042A050BD20071BFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C884E032A050BD20071BFE8 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		5C50F0EF2A07AA7700711196 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5C50F0F12A07AEB600711196 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		5C50F0F32A07D89C00711196 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5C50F0F82A07EA3E00711196 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 		5C884DFC2A050BCF0071BFE8 /* GoalReacher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalReacher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C884DFF2A050BCF0071BFE8 /* GoalReacherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalReacherApp.swift; sourceTree = "<group>"; };
 		5C884E012A050BCF0071BFE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				5C50F0E72A0789D200711196 /* LoginViewModel.swift */,
 				5C50F0E92A07989100711196 /* RegisterViewModel.swift */,
 				5C50F0F12A07AEB600711196 /* ContentViewModel.swift */,
+				5C50F0F82A07EA3E00711196 /* ToDoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				5CE3BEE52A06CB4F0038E8B5 /* MorningViewModel.swift in Sources */,
 				5C50F0EA2A07989100711196 /* RegisterViewModel.swift in Sources */,
 				5CE3BEE72A06CB6F0038E8B5 /* EveningViewModel.swift in Sources */,
+				5C50F0F92A07EA3E00711196 /* ToDoViewModel.swift in Sources */,
 				5C884E1C2A0536AA0071BFE8 /* MustDoTodayView.swift in Sources */,
 				5CE3BEEF2A06CE0F0038E8B5 /* ProfileViewModel.swift in Sources */,
 				5C50F0F02A07AA7700711196 /* Extensions.swift in Sources */,
