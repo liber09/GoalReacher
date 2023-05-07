@@ -17,7 +17,19 @@ struct ContentView: View {
         //NavigationStack{
           //  VStack{
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty{
-            MorningView()
+            TabView{
+                MainView()
+                    .tabItem{
+                        Label("Home", systemImage: "house")
+                    }
+                    .toolbarBackground(Color(red: 47/255, green:79/255,blue: 79/255))
+                ProfileView()
+                    .tabItem{
+                        Label("Profile", systemImage: "person.circle")
+                            .foregroundColor(Color.white)
+                    }
+                    
+            }
         }else{
             LoginView()
         }
