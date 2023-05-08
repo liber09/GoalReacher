@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C4AF2B72A0827AE0038DF69 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5C4AF2B62A0827AE0038DF69 /* HorizonCalendar */; };
+		5C4AF2B92A0890E80038DF69 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */; };
 		5C50F0E82A0789D200711196 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0E72A0789D200711196 /* LoginViewModel.swift */; };
 		5C50F0EA2A07989100711196 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0E92A07989100711196 /* RegisterViewModel.swift */; };
 		5C50F0EC2A07A72E00711196 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0EB2A07A72E00711196 /* User.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		5C50F0E72A0789D200711196 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5C50F0E92A07989100711196 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		5C50F0EB2A07A72E00711196 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			files = (
 				5CE3BED82A06BAB00038E8B5 /* FirebaseAuth in Frameworks */,
 				5CE3BEDA2A06BAB00038E8B5 /* FirebaseFirestore in Frameworks */,
+				5C4AF2B72A0827AE0038DF69 /* HorizonCalendar in Frameworks */,
 				5CE3BEDC2A06BAB00038E8B5 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +188,7 @@
 				5C50F0E92A07989100711196 /* RegisterViewModel.swift */,
 				5C50F0F12A07AEB600711196 /* ContentViewModel.swift */,
 				5C50F0F82A07EA3E00711196 /* ToDoViewModel.swift */,
+				5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 				5CE3BED72A06BAB00038E8B5 /* FirebaseAuth */,
 				5CE3BED92A06BAB00038E8B5 /* FirebaseFirestore */,
 				5CE3BEDB2A06BAB00038E8B5 /* FirebaseFirestoreSwift */,
+				5C4AF2B62A0827AE0038DF69 /* HorizonCalendar */,
 			);
 			productName = GoalReacher;
 			productReference = 5C884DFC2A050BCF0071BFE8 /* GoalReacher.app */;
@@ -248,6 +254,7 @@
 			mainGroup = 5C884DF32A050BCF0071BFE8;
 			packageReferences = (
 				5CE3BED62A06BAB00038E8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5C4AF2B52A0827AE0038DF69 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
 			);
 			productRefGroup = 5C884DFD2A050BCF0071BFE8 /* Products */;
 			projectDirPath = "";
@@ -280,6 +287,7 @@
 			files = (
 				5CE3BEE92A06CB820038E8B5 /* MustDoTodayViewModel.swift in Sources */,
 				5C50F0F42A07D89C00711196 /* MainView.swift in Sources */,
+				5C4AF2B92A0890E80038DF69 /* AddViewModel.swift in Sources */,
 				5CE3BEF12A06D2F60038E8B5 /* HeaderView.swift in Sources */,
 				5C50F0E82A0789D200711196 /* LoginViewModel.swift in Sources */,
 				5C884E212A058E500071BFE8 /* GoalReacherVM.swift in Sources */,
@@ -505,6 +513,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5C4AF2B52A0827AE0038DF69 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		5CE3BED62A06BAB00038E8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -516,6 +532,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5C4AF2B62A0827AE0038DF69 /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5C4AF2B52A0827AE0038DF69 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
 		5CE3BED72A06BAB00038E8B5 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5CE3BED62A06BAB00038E8B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

@@ -9,10 +9,13 @@ import Foundation
 
 
 class ToDoViewModel: ObservableObject {
-    @Published var title: String = ""
-    @Published var weekDays: [String] = []
-    @Published var wantsNotification: Bool = false
-    @Published var notificationText: String = ""
-    @Published var notificationDate: Date = Date()
+    @Published var title = ""
+    @Published var wantsRemainer = false
+    @Published var streakDays = 0
+    @Published var morninig = false
+    @Published var evening = false
+    @Published var todaysMustDo = false
+    @Published var firstDay = Date()
+    @Published var daysDone = [Date]()
     
 }
