@@ -17,5 +17,12 @@ class ToDoViewModel: ObservableObject {
     @Published var todaysMustDo = false
     @Published var firstDay = Date()
     @Published var daysDone = [Date]()
+    @Published var remainderDate = Date()
+    @Published var Schema = [Date]()
     
+    init() {}
+    
+    func save(){
+        
+    }
 }
