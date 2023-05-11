@@ -34,8 +34,8 @@ struct AddNew: View {
                         .autocorrectionDisabled()
                     Toggle("Add to Morning", isOn: $toDoItemModel.morninig)
                     Toggle("Add to Evening", isOn: $toDoItemModel.evening)
-                    Toggle("Add to Todays must do", isOn: $toDoItemModel.todaysMustDo)
-                                                                                                                Toggle("Remainder?", isOn: $toDoItemModel.wantsRemainer)
+                    Toggle("Remainder?", isOn: $toDoItemModel.wantsRemainer)
+                        
                     DatePicker("RemainderDate", selection: $toDoItemModel.remainderDate)
                         .datePickerStyle(GraphicalDatePickerStyle())
                     
@@ -111,15 +111,12 @@ struct AddNew: View {
                             }
                             .foregroundColor(tapSun ? Color.white : Color.black)
                             .background(tapSun ? Color.blue : Color.white)
+                        TextField("daysToDo", text: $toDoItemModel.title)
+                            .textFieldStyle(DefaultTextFieldStyle())
+                            .autocorrectionDisabled()
+                        
                         Spacer()
                     }
-                  
-                    
-    
-                            
-                            
-                            
-                            
                             Button(action: {
                                 
                             }) {
@@ -136,9 +133,6 @@ struct AddNew: View {
                             .cornerRadius(10.0)
                         }
                     }.onAppear() {
-                        //habitListVM.listenToFirestore()
-                    
-                    
                 }
                 
             }
