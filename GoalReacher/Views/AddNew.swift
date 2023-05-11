@@ -29,18 +29,25 @@ struct AddNew: View {
                     .bold()
                     .font(.system(size: 28))
                 Form {
+                    
                     TextField("Title", text: $toDoItemModel.title)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocorrectionDisabled()
-                    Toggle("Add to Morning", isOn: $toDoItemModel.morninig)
+                    
+                    Toggle("Add to Morning", isOn: $toDoItemModel.morning)
                     Toggle("Add to Evening", isOn: $toDoItemModel.evening)
-                    Toggle("Remainder?", isOn: $toDoItemModel.wantsRemainer)
-                        
+                    Toggle("Remainder?", isOn: $toDoItemModel.wantsRemainder)
+                    
                     DatePicker("RemainderDate", selection: $toDoItemModel.remainderDate)
                         .datePickerStyle(GraphicalDatePickerStyle())
                     
+                    TextField("daysToDo", text: $toDoItemModel.wantedDaysToDo)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocorrectionDisabled()
+                                     
                     HStack(spacing: 10){
                         Spacer()
+                        
                         Text("Mon")
                             .onTapGesture {
                                 if tapMon == false{
@@ -111,14 +118,12 @@ struct AddNew: View {
                             }
                             .foregroundColor(tapSun ? Color.white : Color.black)
                             .background(tapSun ? Color.blue : Color.white)
-                        TextField("daysToDo", text: $toDoItemModel.title)
-                            .textFieldStyle(DefaultTextFieldStyle())
-                            .autocorrectionDisabled()
-                        
                         Spacer()
+                      
                     }
+                      
                             Button(action: {
-                                
+                                toDoItemModel.save(title: toDoItemModel.title, wantsRemainder: toDoItemModel.wantsRemainder, lastDate: Date(), streakDays: 0, selectedDate: Date(), done: false, daysToDo: toDoItemModel.wantedDaysToDo)
                             }) {
                                 Image(systemName: "square.and.pencil")
                                     .foregroundColor(Color.white)

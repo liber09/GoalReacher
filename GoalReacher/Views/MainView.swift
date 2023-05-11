@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    
+    @StateObject var MustDoTodayVM : MustDoTodayViewModel
     let goalReacherVM = GoalReacherVM()
     var body: some View {
         NavigationStack{
@@ -55,7 +55,7 @@ struct MainView: View {
                     }
                     .background(Color.white)
                 }
-                NavigationLink(destination: MustDoTodayView()) {
+                NavigationLink(destination: MustDoTodayView(vm: MustDoTodayVM)) {
                     HStack{
                         Image("star")
                             .resizable()
@@ -86,6 +86,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(MustDoTodayVM: MustDoTodayViewModel())
     }
 }

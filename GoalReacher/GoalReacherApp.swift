@@ -10,6 +10,7 @@ import FirebaseCore
 
 @main
 struct GoalReacherApp: App {
+    @StateObject var MustDoTodayVM = MustDoTodayViewModel()
     init() {
         FirebaseApp.configure()
     }
@@ -17,7 +18,7 @@ struct GoalReacherApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(MustDoTodayVM: MustDoTodayVM)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

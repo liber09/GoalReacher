@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C077D062A0D41B10020E726 /* MustDoTodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C077D052A0D41B10020E726 /* MustDoTodayViewModel.swift */; };
 		5C4AF2B72A0827AE0038DF69 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5C4AF2B62A0827AE0038DF69 /* HorizonCalendar */; };
 		5C4AF2B92A0890E80038DF69 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */; };
 		5C50F0E82A0789D200711196 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0E72A0789D200711196 /* LoginViewModel.swift */; };
@@ -37,7 +38,6 @@
 		5CE3BEE32A06CB340038E8B5 /* AddNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */; };
 		5CE3BEE52A06CB4F0038E8B5 /* MorningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */; };
 		5CE3BEE72A06CB6F0038E8B5 /* EveningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */; };
-		5CE3BEE92A06CB820038E8B5 /* MustDoTodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE82A06CB820038E8B5 /* MustDoTodayViewModel.swift */; };
 		5CE3BEEB2A06CD0D0038E8B5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEEA2A06CD0D0038E8B5 /* LoginView.swift */; };
 		5CE3BEED2A06CDF20038E8B5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEEC2A06CDF20038E8B5 /* ProfileView.swift */; };
 		5CE3BEEF2A06CE0F0038E8B5 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */; };
@@ -47,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C077D052A0D41B10020E726 /* MustDoTodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoTodayViewModel.swift; sourceTree = "<group>"; };
 		5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		5C50F0E72A0789D200711196 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5C50F0E92A07989100711196 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNewViewModel.swift; path = ../../../../../../AddNewViewModel.swift; sourceTree = "<group>"; };
 		5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MorningViewModel.swift; path = ../../../../../../MorningViewModel.swift; sourceTree = "<group>"; };
 		5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EveningViewModel.swift; path = ../../../../../../EveningViewModel.swift; sourceTree = "<group>"; };
-		5CE3BEE82A06CB820038E8B5 /* MustDoTodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MustDoTodayViewModel.swift; path = ../../../../../../MustDoTodayViewModel.swift; sourceTree = "<group>"; };
 		5CE3BEEA2A06CD0D0038E8B5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/GoalReacher/GoalReacher/Views/LoginView.swift"; sourceTree = "<group>"; };
 		5CE3BEEC2A06CDF20038E8B5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -182,13 +182,13 @@
 				5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */,
 				5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */,
 				5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */,
-				5CE3BEE82A06CB820038E8B5 /* MustDoTodayViewModel.swift */,
 				5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */,
 				5C50F0E72A0789D200711196 /* LoginViewModel.swift */,
 				5C50F0E92A07989100711196 /* RegisterViewModel.swift */,
 				5C50F0F12A07AEB600711196 /* ContentViewModel.swift */,
 				5C50F0F82A07EA3E00711196 /* ToDoViewModel.swift */,
 				5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */,
+				5C077D052A0D41B10020E726 /* MustDoTodayViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -285,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE3BEE92A06CB820038E8B5 /* MustDoTodayViewModel.swift in Sources */,
 				5C50F0F42A07D89C00711196 /* MainView.swift in Sources */,
 				5C4AF2B92A0890E80038DF69 /* AddViewModel.swift in Sources */,
 				5CE3BEF12A06D2F60038E8B5 /* HeaderView.swift in Sources */,
@@ -300,6 +299,7 @@
 				5C884E1E2A0588DC0071BFE8 /* AddNew.swift in Sources */,
 				5CE3BEF32A06DB8B0038E8B5 /* RegisterView.swift in Sources */,
 				5CE3BEE32A06CB340038E8B5 /* AddNewViewModel.swift in Sources */,
+				5C077D062A0D41B10020E726 /* MustDoTodayViewModel.swift in Sources */,
 				5CE3BEED2A06CDF20038E8B5 /* ProfileView.swift in Sources */,
 				5C884E1A2A0536860071BFE8 /* EveningView.swift in Sources */,
 				5CE3BEE52A06CB4F0038E8B5 /* MorningViewModel.swift in Sources */,

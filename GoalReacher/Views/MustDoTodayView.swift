@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MustDoTodayView: View {
+    @StateObject var vm : MustDoTodayViewModel
     var body: some View {
         NavigationView{
             VStack{
@@ -23,17 +24,28 @@ struct MustDoTodayView: View {
                                     Text("Must Do Today").font(.headline)
                                         .foregroundColor(Color.white)
                                 }
+                                List {
+                                    ForEach(vm.todaysToDos) { model in
+                                        HStack{
+                                            Text(model.title)
+                                            Text(String(model.streakDays)+" / " + model.wantedDaysToDo)
+                                        }
+                                        
+                                    }
+                                }
                             }
                         }
                 }
                 Text("Hello, Today!")
             }
         }
-    }
+}
 }
 
-struct MustDoTodayView_Previews: PreviewProvider {
-    static var previews: some View {
-        MustDoTodayView()
-    }
-}
+//struct MustDoTodayView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MustDoTodayView()
+//    }
+//}
+                                                                                                                                              
+
