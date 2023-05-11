@@ -40,8 +40,8 @@ struct AddNew: View {
                     
                     DatePicker("RemainderDate", selection: $toDoItemModel.remainderDate)
                         .datePickerStyle(GraphicalDatePickerStyle())
-                    
-                    TextField("daysToDo", text: $toDoItemModel.wantedDaysToDo)
+                    Text("How many days is your goal?")
+                    TextField("daysToDo", text:  $toDoItemModel.wantedDaysToDo)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocorrectionDisabled()
                                      
