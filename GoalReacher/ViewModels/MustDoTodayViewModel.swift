@@ -14,19 +14,29 @@ import FirebaseFirestoreSwift
 class MustDoTodayViewModel: ObservableObject {
     @Published var todaysToDos = [ToDoItem]()
     init() {}
-    func listen2FS (){
         
         let db = Firestore.firestore()
         let auth = Auth.auth()
         
-       
-        
-        func listen2FS (){
-            print("getting fropm fb")
+    func GetFromFirestore(){
+        guard let user = auth.currentUser else {return}
+        todaysToDos.removeAll()
+        db.collection("users").document(user.uid).collection("todos").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    
+                }
+            }
+        }
+    }
+    func listen2FS (){
+            
             guard let user = auth.currentUser else {return}
             
             let itemsRef = db.collection("users").document(user.uid).collection("todos")
-            
+              
             itemsRef.addSnapshotListener() {
                 snapshot, err in
                 
@@ -36,23 +46,24 @@ class MustDoTodayViewModel: ObservableObject {
                     print("error\(err)")
                 } else {
                     
-                    self.todaysToDos.removeAll()
+                    //self.todaysToDos.removeAll()
                     
                     for document in snapshot.documents{
                         
                         do{
-                            
                             let todo = try document.data(as : ToDoItem.self)
+                            print(todo)
                             self.todaysToDos.append(todo)
-                            print("vi hämtar")
-                            
+                         
                         } catch {
-                            print("Error")
+                            print("Error when removing")
                         }
                     }
                 }
             }
+            
         }
+            
         func streakCounter(todo: ToDoItem) {
             guard let user = Auth.auth().currentUser, let todoId = todo.id else { return }
             
@@ -94,4 +105,4 @@ class MustDoTodayViewModel: ObservableObject {
             }
         }
     }
-}
+
