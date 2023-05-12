@@ -52,8 +52,11 @@ class MustDoTodayViewModel: ObservableObject {
                         
                         do{
                             let todo = try document.data(as : ToDoItem.self)
+                            if Calendar.current.isDateInToday(todo.selectedDate){
+                                self.todaysToDos.append(todo)
+                            }
                             print(todo)
-                            self.todaysToDos.append(todo)
+                            
                          
                         } catch {
                             print("Error when removing")
