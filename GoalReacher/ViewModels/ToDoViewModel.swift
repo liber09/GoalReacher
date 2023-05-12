@@ -18,6 +18,7 @@ class ToDoViewModel: ObservableObject {
     @Published var daysDone = [Date]()
     @Published var remainderDate = Date()
     @Published var wantedDaysToDo = "0"
+    @Published var selectedDate = Date()
     
     @Published var todos = [ToDoItem]()
     
@@ -29,7 +30,7 @@ class ToDoViewModel: ObservableObject {
     func save(title: String, wantsRemainder: Bool, lastDate: Date, streakDays: Int, selectedDate: Date, done: Bool, daysToDo: String){
         guard let user = auth.currentUser else {return}
         let todoRef = db.collection("users").document(user.uid).collection("todos")
-        let todo = ToDoItem(title: title, wantsRemainder: wantsRemainder, morning: morning, evening: evening, lastDate: Date(),streakDays: 0, selectedDate: Date(), done: false, wantedDaysToDo: wantedDaysToDo)
+        let todo = ToDoItem(title: title, wantsRemainder: wantsRemainder, morning: morning, evening: evening, lastDate: Date(),streakDays: 0, selectedDate: selectedDate, done: false, wantedDaysToDo: wantedDaysToDo)
                 do {
                     try todoRef.addDocument(from: todo)
                 } catch {

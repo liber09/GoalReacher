@@ -38,7 +38,7 @@ struct AddNew: View {
                     Toggle("Add to Evening", isOn: $toDoItemModel.evening)
                     Toggle("Remainder?", isOn: $toDoItemModel.wantsRemainder)
                     
-                    DatePicker("RemainderDate", selection: $toDoItemModel.remainderDate)
+                    DatePicker("SelectedDate", selection: $toDoItemModel.selectedDate)
                         .datePickerStyle(GraphicalDatePickerStyle())
                     Text("How many days is your goal?")
                     TextField("daysToDo", text:  $toDoItemModel.wantedDaysToDo)
@@ -123,7 +123,7 @@ struct AddNew: View {
                     }
                       
                             Button(action: {
-                                toDoItemModel.save(title: toDoItemModel.title, wantsRemainder: toDoItemModel.wantsRemainder, lastDate: Date(), streakDays: 0, selectedDate: Date(), done: false, daysToDo: toDoItemModel.wantedDaysToDo)
+                                toDoItemModel.save(title: toDoItemModel.title, wantsRemainder: toDoItemModel.wantsRemainder, lastDate: Date(), streakDays: 0, selectedDate: toDoItemModel.selectedDate, done: false, daysToDo: toDoItemModel.wantedDaysToDo)
                             }) {
                                 Image(systemName: "square.and.pencil")
                                     .foregroundColor(Color.white)

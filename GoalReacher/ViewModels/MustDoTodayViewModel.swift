@@ -18,19 +18,6 @@ class MustDoTodayViewModel: ObservableObject {
         let db = Firestore.firestore()
         let auth = Auth.auth()
         
-    func GetFromFirestore(){
-        guard let user = auth.currentUser else {return}
-        todaysToDos.removeAll()
-        db.collection("users").document(user.uid).collection("todos").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    
-                }
-            }
-        }
-    }
     func listen2FS (){
             
             guard let user = auth.currentUser else {return}
@@ -46,7 +33,7 @@ class MustDoTodayViewModel: ObservableObject {
                     print("error\(err)")
                 } else {
                     
-                    //self.todaysToDos.removeAll()
+                    self.todaysToDos.removeAll()
                     
                     for document in snapshot.documents{
                         
@@ -107,5 +94,24 @@ class MustDoTodayViewModel: ObservableObject {
                     }
             }
         }
+    
+    func toggle(todo: ToDoItem) {
+            guard let user = auth.currentUser else {return}
+            let todoRef = db.collection("users").document(user.uid).collection("todos")
+            let date = Date()
+            
+            if let id = todo.id {
+                todoRef.document(id).updateData(["done" : !todo.done])
+                    
+                if todo.done == false {
+                    if todo.lastDate != date {
+                        todoRef.document(id).updateData(["lastDate" : date])
+                    }
+                    let newStreak = todo.streakDays + 1
+                    todoRef.document(id).updateData(["streakDays" : newStreak])
+                }
+            }
+        }
+    
     }
 

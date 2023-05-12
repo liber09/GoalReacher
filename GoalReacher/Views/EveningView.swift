@@ -8,25 +8,36 @@
 import SwiftUI
 
 struct EveningView: View {
+    @StateObject var vm = EveningViewModel()
     var body: some View {
         NavigationView{
             VStack{
-                ZStack{
-                    Image("space")
-                        .resizable()
-                        .frame(width: 1000, height: 1000)
+                //ZStack{
+                    //Image("space")
+                      //  .resizable()
+                      //  .frame(width: 1000, height: 1000)
                     Text("")
                         .navigationBarTitleDisplayMode(.inline)
                         .toolbar{
                             ToolbarItem(placement: .principal) {
-                                VStack{
-                                    Text("Evening").font(.headline)
-                                        .foregroundColor(Color.white)
-                                }
                             }
                         }
+                Text(String(vm.eveningTodos.count))
+                    List {
+                        
+                        ForEach(vm.eveningTodos) { model in
+                            HStack{
+                                Text(model.title)
+                                Text(String(model.streakDays)+" / " + model.wantedDaysToDo)
+                                Spacer()
+                                
+                            }
+                        }
+                    //}
                 }
-                Text("Hello, Evening!")
+                .onAppear(){
+                    vm.listen2FS()
+                }
             }
         }
     }
