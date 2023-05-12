@@ -27,9 +27,14 @@ struct MustDoTodayView: View {
                         
                         ForEach(vm.todaysToDos) { model in
                             HStack{
-                                Text("Test")
                                 Text(model.title)
                                 Text(String(model.streakDays)+" / " + model.wantedDaysToDo)
+                                Spacer()
+                                Image("star")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .padding(20)
+                                    .foregroundColor(Color.yellow)
                             }
                         }
                     //}
