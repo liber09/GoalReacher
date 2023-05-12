@@ -9,7 +9,7 @@ import SwiftUI
 import FirebaseAuth
 
 struct MorningView: View {
-@StateObject var vm = MorningViewModel()
+    @StateObject var vm : MorningViewModel
     var body: some View {
         NavigationView{
             VStack{
@@ -31,11 +31,16 @@ struct MorningView: View {
                                 Text(model.title)
                                 Text(String(model.streakDays)+" / " + model.wantedDaysToDo)
                                 Spacer()
-                                Image("star")
-                                    .resizable()
-                                    .frame(width: 25, height: 25)
-                                    .padding(20)
-                                    .foregroundColor(Color.yellow)
+                                Button(action: {
+                                    vm.toggle(todo: model)
+                                }){
+                                    Image(systemName: model.done ? "star.fill" : "star")
+                                        .resizable()
+                                        .frame(width: 25, height: 25)
+                                        .padding(20)
+                                        .foregroundColor(Color.yellow)
+                                }
+
                             }
                         }
                     //}
@@ -45,11 +50,5 @@ struct MorningView: View {
                 }
             }
         }
-    }
-}
-
-struct MorningView_Previews: PreviewProvider {
-    static var previews: some View {
-        MorningView()
     }
 }

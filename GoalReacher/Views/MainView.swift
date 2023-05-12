@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var MustDoTodayVM : MustDoTodayViewModel
+    @StateObject var MorningVM : MorningViewModel
+    @StateObject var EveningVM : EveningViewModel
     let goalReacherVM = GoalReacherVM()
     var body: some View {
         NavigationStack{
@@ -20,7 +22,7 @@ struct MainView: View {
                 Text(goalReacherVM.getInfoAboutToday())
                     .foregroundColor(Color.white)
                     .font(.system(size: 20))
-                NavigationLink(destination: MorningView()) {
+                NavigationLink(destination: MorningView(vm: MorningVM)) {
                     HStack{
                         Image("star")
                             .resizable()
@@ -38,7 +40,7 @@ struct MainView: View {
                     }
                     .background(Color.white)
                 }
-                NavigationLink(destination: EveningView()) {
+                NavigationLink(destination: EveningView(vm: EveningVM)) {
                     HStack{
                         Image("star")
                             .resizable()
@@ -86,6 +88,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(MustDoTodayVM: MustDoTodayViewModel())
+        MainView(MustDoTodayVM: MustDoTodayViewModel(),MorningVM: MorningViewModel(),EveningVM: EveningViewModel() )
     }
 }

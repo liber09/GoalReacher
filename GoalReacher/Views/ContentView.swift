@@ -13,13 +13,15 @@ struct ContentView: View {
     //let GoalReacherVm = GoalReacherVM()
     @StateObject var viewModel = ContentViewModel()
     @StateObject var MustDoTodayVM : MustDoTodayViewModel
+    @StateObject var MorningVM : MorningViewModel
+    @StateObject var EveningVM : EveningViewModel
     
     var body: some View {
         //NavigationStack{
         //  VStack{
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty{
             TabView{
-                MainView(MustDoTodayVM: MustDoTodayVM)
+                MainView(MustDoTodayVM: MustDoTodayVM, MorningVM: MorningVM, EveningVM: EveningVM)
                     .tabItem{
                         Label("Home", systemImage: "house")
                     }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EveningView: View {
-    @StateObject var vm = EveningViewModel()
+    @StateObject var vm : EveningViewModel
     var body: some View {
         NavigationView{
             VStack{
@@ -30,6 +30,15 @@ struct EveningView: View {
                                 Text(model.title)
                                 Text(String(model.streakDays)+" / " + model.wantedDaysToDo)
                                 Spacer()
+                                Button(action: {
+                                    vm.toggle(todo: model)
+                                }){
+                                    Image(systemName: model.done ? "star.fill" : "star")
+                                        .resizable()
+                                        .frame(width: 25, height: 25)
+                                        .padding(20)
+                                        .foregroundColor(Color.yellow)
+                                }
                                 
                             }
                         }
@@ -43,8 +52,3 @@ struct EveningView: View {
     }
 }
 
-struct EveningView_Previews: PreviewProvider {
-    static var previews: some View {
-        EveningView()
-    }
-}
