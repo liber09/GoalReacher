@@ -36,8 +36,11 @@ struct AddNew: View {
                     
                     Toggle("Add to Morning", isOn: $toDoItemModel.morning)
                     Toggle("Add to Evening", isOn: $toDoItemModel.evening)
-                    Toggle("Remainder?", isOn: $toDoItemModel.wantsRemainder)
-                    
+                    Toggle("Remainder every day at?", isOn: $toDoItemModel.wantsRemainder)
+                    if toDoItemModel.wantsRemainder {
+                        DatePicker("Remainder time", selection: $toDoItemModel.remainderDate, displayedComponents: .hourAndMinute)
+                            .datePickerStyle(CompactDatePickerStyle())
+                    }
                     DatePicker("SelectedDate", selection: $toDoItemModel.selectedDate)
                         .datePickerStyle(GraphicalDatePickerStyle())
                     Text("How many days is your goal?")

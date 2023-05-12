@@ -126,12 +126,14 @@ func toggleDoneToday(todo: ToDoItem) {
         let calendar = Calendar.current
         var doneDates = todo.doneDates
         var todoDone = false
+        var newStreak = 0
         
         if let id = todo.id {
             if todo.doneDates.contains(where: { calendar.isDate($0, inSameDayAs: date) }) {
                 let dateToDelete = todo.doneDates.first(where: {calendar.isDate($0, inSameDayAs: date)})
                 doneDates.removeAll{ $0 == dateToDelete }
                 todoDone = false
+                newStreak = todo.streakDays - 1
                 
             } else {
                 // Append new date and sort list before updating firestore. We want those dates in order!
@@ -140,8 +142,9 @@ func toggleDoneToday(todo: ToDoItem) {
                 doneDates.append(date)
                 doneDates.sort()
                 todoDone = true
+                newStreak = todo.streakDays + 1
             }
-            todoRef.document(id).updateData(["doneDates" : doneDates, "done" : todoDone])
+            todoRef.document(id).updateData(["doneDates" : doneDates, "done" : todoDone, "streakDays" : newStreak])
         }
     }
 
