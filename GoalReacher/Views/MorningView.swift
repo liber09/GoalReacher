@@ -9,23 +9,40 @@ import SwiftUI
 import FirebaseAuth
 
 struct MorningView: View {
-@StateObject var viewModel = MorningViewModel()
+@StateObject var vm = MorningViewModel()
     var body: some View {
         NavigationView{
             VStack{
-                ZStack{
-
-                    Image("space")
-                        .resizable()
-                        .frame(width: 1000, height: 1000)
-                    VStack{
-                        Text("Morning").font(.headline)
-                            .foregroundColor(Color.white)
-                    }
-                    
-
+                //ZStack{
+                    //Image("space")
+                      //  .resizable()
+                      //  .frame(width: 1000, height: 1000)
+                    Text("")
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar{
+                            ToolbarItem(placement: .principal) {
+                            }
+                        }
+                Text(String(vm.morningTodos.count))
+                    List {
+                        
+                        ForEach(vm.morningTodos) { model in
+                            HStack{
+                                Text(model.title)
+                                Text(String(model.streakDays)+" / " + model.wantedDaysToDo)
+                                Spacer()
+                                Image("star")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .padding(20)
+                                    .foregroundColor(Color.yellow)
+                            }
+                        }
+                    //}
                 }
-                Text("Hello, Morning!")
+                .onAppear(){
+                    vm.listen2FS()
+                }
             }
         }
     }
