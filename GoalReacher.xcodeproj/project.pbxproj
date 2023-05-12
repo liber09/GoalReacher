@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5C077D062A0D41B10020E726 /* MustDoTodayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C077D052A0D41B10020E726 /* MustDoTodayViewModel.swift */; };
 		5C4AF2B72A0827AE0038DF69 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 5C4AF2B62A0827AE0038DF69 /* HorizonCalendar */; };
-		5C4AF2B92A0890E80038DF69 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */; };
 		5C50F0E82A0789D200711196 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0E72A0789D200711196 /* LoginViewModel.swift */; };
 		5C50F0EA2A07989100711196 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0E92A07989100711196 /* RegisterViewModel.swift */; };
 		5C50F0EC2A07A72E00711196 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C50F0EB2A07A72E00711196 /* User.swift */; };
@@ -48,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		5C077D052A0D41B10020E726 /* MustDoTodayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustDoTodayViewModel.swift; sourceTree = "<group>"; };
-		5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		5C50F0E72A0789D200711196 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5C50F0E92A07989100711196 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		5C50F0EB2A07A72E00711196 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 				5C50F0E92A07989100711196 /* RegisterViewModel.swift */,
 				5C50F0F12A07AEB600711196 /* ContentViewModel.swift */,
 				5C50F0F82A07EA3E00711196 /* ToDoViewModel.swift */,
-				5C4AF2B82A0890E80038DF69 /* AddViewModel.swift */,
 				5C077D052A0D41B10020E726 /* MustDoTodayViewModel.swift */,
 			);
 			path = ViewModels;
@@ -286,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C50F0F42A07D89C00711196 /* MainView.swift in Sources */,
-				5C4AF2B92A0890E80038DF69 /* AddViewModel.swift in Sources */,
 				5CE3BEF12A06D2F60038E8B5 /* HeaderView.swift in Sources */,
 				5C50F0E82A0789D200711196 /* LoginViewModel.swift in Sources */,
 				5C884E212A058E500071BFE8 /* GoalReacherVM.swift in Sources */,

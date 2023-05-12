@@ -109,6 +109,9 @@ class MustDoTodayViewModel: ObservableObject {
                     }
                     let newStreak = todo.streakDays + 1
                     todoRef.document(id).updateData(["streakDays" : newStreak])
+                }else{
+                    let newStreak = todo.streakDays - 1
+                    todoRef.document(id).updateData(["streakDays" : newStreak])
                 }
             }
         }
