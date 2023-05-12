@@ -13,6 +13,7 @@ import FirebaseFirestoreSwift
 
 class MustDoTodayViewModel: ObservableObject {
     @Published var todaysToDos = [ToDoItem]()
+    @Published var date = Date()
     init() {}
         
         let db = Firestore.firestore()
@@ -116,5 +117,32 @@ class MustDoTodayViewModel: ObservableObject {
             }
         }
     
+
+func toggleDoneToday(todo: ToDoItem) {
+
+        guard let user = auth.currentUser else {return}
+        
+        let todoRef = db.collection("users").document(user.uid).collection("todos")
+        let calendar = Calendar.current
+        var doneDates = todo.doneDates
+        var todoDone = false
+        
+        if let id = todo.id {
+            if todo.doneDates.contains(where: { calendar.isDate($0, inSameDayAs: date) }) {
+                let dateToDelete = todo.doneDates.first(where: {calendar.isDate($0, inSameDayAs: date)})
+                doneDates.removeAll{ $0 == dateToDelete }
+                todoDone = false
+                
+            } else {
+                // Append new date and sort list before updating firestore. We want those dates in order!
+                // Actually, I'm not sure it matters any longer, but I will keep it 'as is' for the time being.
+                // I don't want to break anything and it is nice to have the dates in order when checking the firebase console.
+                doneDates.append(date)
+                doneDates.sort()
+                todoDone = true
+            }
+            todoRef.document(id).updateData(["doneDates" : doneDates, "done" : todoDone])
+        }
     }
 
+}

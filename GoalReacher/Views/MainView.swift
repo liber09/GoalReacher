@@ -11,6 +11,7 @@ struct MainView: View {
     @StateObject var MustDoTodayVM : MustDoTodayViewModel
     @StateObject var MorningVM : MorningViewModel
     @StateObject var EveningVM : EveningViewModel
+    @StateObject var StatisticsVM : StatisticsViewModel
     let goalReacherVM = GoalReacherVM()
     var body: some View {
         NavigationStack{
@@ -80,6 +81,23 @@ struct MainView: View {
                         .frame(width: 60, height: 60)
                         .foregroundColor(Color.white)
                 }
+                NavigationLink(destination: StatisticsView(vm: StatisticsVM)) {
+                    HStack{
+                        Image("star")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .padding(20)
+                        
+                        Text("Statistics")
+                            .font(.system(size: 36))
+                            .foregroundColor(Color.black)
+                        
+                        Image(systemName: "arrow.forward")
+                            .padding(20)
+                            .foregroundColor(Color.black)
+                    }
+                    .background(Color.white)
+                }
             }
             }
          }
@@ -88,6 +106,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(MustDoTodayVM: MustDoTodayViewModel(),MorningVM: MorningViewModel(),EveningVM: EveningViewModel() )
+        MainView(MustDoTodayVM: MustDoTodayViewModel(),MorningVM: MorningViewModel(),EveningVM: EveningViewModel(), StatisticsVM: StatisticsViewModel() )
     }
 }

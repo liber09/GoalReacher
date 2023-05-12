@@ -32,7 +32,7 @@ struct MustDoTodayView: View {
                             Spacer()
                             
                             Button(action: {
-                                vm.toggle(todo: model)
+                                vm.toggleDoneToday(todo: model)
                             }){
                                 Image(systemName: model.done ? "star.fill" : "star")
                                     .resizable()
