@@ -23,7 +23,8 @@ struct MorningView: View {
                             ToolbarItem(placement: .principal) {
                             }
                         }
-                Text(String(vm.morningTodos.count))
+                Text("Morning")
+                    .font(.system(size: 36))
                     List {
                         
                         ForEach(vm.morningTodos) { model in

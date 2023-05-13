@@ -22,7 +22,8 @@ struct MustDoTodayView: View {
                         ToolbarItem(placement: .principal) {
                         }
                     }
-                Text(String(vm.todaysToDos.count))
+                Text("Must Do Today")
+                    .font(.system(size: 36))
                 List {
                     
                     ForEach(vm.todaysToDos) { model in

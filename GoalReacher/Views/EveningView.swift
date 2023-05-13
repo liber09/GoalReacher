@@ -22,7 +22,8 @@ struct EveningView: View {
                             ToolbarItem(placement: .principal) {
                             }
                         }
-                Text(String(vm.eveningTodos.count))
+                Text("Evening")
+                    .font(.system(size: 36))
                     List {
                         
                         ForEach(vm.eveningTodos) { model in
