@@ -14,6 +14,5 @@ class GoalReacherVM {
         let todayString = today.formatted(date: .complete, time: .standard)
         return todayString
     }
-
 }
 

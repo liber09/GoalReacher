@@ -136,9 +136,6 @@ func toggleDoneToday(todo: ToDoItem) {
                 newStreak = todo.streakDays - 1
                 
             } else {
-                // Append new date and sort list before updating firestore. We want those dates in order!
-                // Actually, I'm not sure it matters any longer, but I will keep it 'as is' for the time being.
-                // I don't want to break anything and it is nice to have the dates in order when checking the firebase console.
                 doneDates.append(date)
                 doneDates.sort()
                 todoDone = true

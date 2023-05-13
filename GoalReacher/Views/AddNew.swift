@@ -11,6 +11,7 @@ import HorizonCalendar
 struct AddNew: View {
     @EnvironmentObject var toDoItemsModel: ToDoViewModel
     @StateObject var toDoItemModel = ToDoViewModel()
+    @ObservedObject var notificationManager: NotificationManager
     @State private var tapMon:Bool = false
     @State private var tapTue:Bool = false
     @State private var tapWed:Bool = false
@@ -127,6 +128,20 @@ struct AddNew: View {
                       
                             Button(action: {
                                 toDoItemModel.save(title: toDoItemModel.title, wantsRemainder: toDoItemModel.wantsRemainder, lastDate: Date(), streakDays: 0, selectedDate: toDoItemModel.selectedDate, done: false, daysToDo: toDoItemModel.wantedDaysToDo)
+                                
+                                let reminderTimeDateComponents = Calendar.current.dateComponents([.hour, .minute], from: toDoItemModel.remainderDate)
+                                                    let dateFormatter = DateFormatter()
+                                                    dateFormatter.timeStyle = .short
+                                                    
+                                                    let reminderTime = dateFormatter.string(from: toDoItemModel.remainderDate)
+                                                    
+                                                    guard let hour = reminderTimeDateComponents.hour, let minute = reminderTimeDateComponents.minute else {return}
+                                
+                                notificationManager.createLocalNotification(title: toDoItemModel.title, hour: hour, minute: minute) { error in
+                                                        if let error {
+                                                            print(error)
+                                                        }
+                                                    }
                             }) {
                                 Image(systemName: "square.and.pencil")
                                     .foregroundColor(Color.white)
@@ -140,17 +155,12 @@ struct AddNew: View {
                             .background(Color(red: 255/255, green:16/255,blue: 240/255))
                             .cornerRadius(10.0)
                         }
-                    }.onAppear() {
+                    }.onDisappear {
+                        
                 }
                 
             }
             
         }
     }
-             
-                         
-struct AddNew_Previews: PreviewProvider {
-    static var previews: some View {
-        AddNew()
-    }
-}
+            

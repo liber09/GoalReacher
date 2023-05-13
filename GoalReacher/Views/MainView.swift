@@ -12,6 +12,7 @@ struct MainView: View {
     @StateObject var MorningVM : MorningViewModel
     @StateObject var EveningVM : EveningViewModel
     @StateObject var StatisticsVM : StatisticsViewModel
+    @ObservedObject var notificationManager: NotificationManager
     let goalReacherVM = GoalReacherVM()
     var body: some View {
         NavigationStack{
@@ -75,7 +76,7 @@ struct MainView: View {
                     }
                     .background(Color.white)
                 }
-                NavigationLink(destination: AddNew()) {
+                NavigationLink(destination: AddNew(notificationManager: notificationManager)) {
                     Image(systemName: "plus.diamond.fill")
                         .resizable()
                         .frame(width: 60, height: 60)
@@ -98,14 +99,18 @@ struct MainView: View {
                     }
                     .background(Color.white)
                 }
+                
             }
             }
          }
+        .onAppear{
+            notificationManager.requestAuthorization()
+        }
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(MustDoTodayVM: MustDoTodayViewModel(),MorningVM: MorningViewModel(),EveningVM: EveningViewModel(), StatisticsVM: StatisticsViewModel() )
+        MainView(MustDoTodayVM: MustDoTodayViewModel(),MorningVM: MorningViewModel(),EveningVM: EveningViewModel(), StatisticsVM: StatisticsViewModel(), notificationManager: NotificationManager())
     }
 }

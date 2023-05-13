@@ -24,7 +24,6 @@ class StatisticsViewModel: ObservableObject {
             var startDate = Date()
             var endDate = Date()
             
-            
             enum TimePeriod: String, CaseIterable, Identifiable {
                 case week, month, year
                 var id: Self { self }

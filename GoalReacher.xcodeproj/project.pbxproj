@@ -31,12 +31,12 @@
 		5C884E212A058E500071BFE8 /* GoalReacherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C884E202A058E500071BFE8 /* GoalReacherVM.swift */; };
 		5CCF85902A0E3EB900CF11CB /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCF858F2A0E3EB900CF11CB /* StatisticsViewModel.swift */; };
 		5CCF85922A0E3EDE00CF11CB /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCF85912A0E3EDE00CF11CB /* StatisticsView.swift */; };
+		5CCF85942A0EEC1600CF11CB /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCF85932A0EEC1600CF11CB /* NotificationManager.swift */; };
 		5CE3BED82A06BAB00038E8B5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE3BED72A06BAB00038E8B5 /* FirebaseAuth */; };
 		5CE3BEDA2A06BAB00038E8B5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE3BED92A06BAB00038E8B5 /* FirebaseFirestore */; };
 		5CE3BEDC2A06BAB00038E8B5 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5CE3BEDB2A06BAB00038E8B5 /* FirebaseFirestoreSwift */; };
 		5CE3BEDE2A06C5D80038E8B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3BEDD2A06C5D80038E8B5 /* GoogleService-Info.plist */; };
 		5CE3BEE12A06CAD80038E8B5 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE02A06CAD80038E8B5 /* ToDoItem.swift */; };
-		5CE3BEE32A06CB340038E8B5 /* AddNewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */; };
 		5CE3BEE52A06CB4F0038E8B5 /* MorningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */; };
 		5CE3BEE72A06CB6F0038E8B5 /* EveningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */; };
 		5CE3BEEB2A06CD0D0038E8B5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3BEEA2A06CD0D0038E8B5 /* LoginView.swift */; };
@@ -72,9 +72,9 @@
 		5C884E202A058E500071BFE8 /* GoalReacherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalReacherVM.swift; sourceTree = "<group>"; };
 		5CCF858F2A0E3EB900CF11CB /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
 		5CCF85912A0E3EDE00CF11CB /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		5CCF85932A0EEC1600CF11CB /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		5CE3BEDD2A06C5D80038E8B5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/GoalReacher/GoalReacher/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5CE3BEE02A06CAD80038E8B5 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ToDoItem.swift; path = ../../../../../../ToDoItem.swift; sourceTree = "<group>"; };
-		5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNewViewModel.swift; path = ../../../../../../AddNewViewModel.swift; sourceTree = "<group>"; };
 		5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MorningViewModel.swift; path = ../../../../../../MorningViewModel.swift; sourceTree = "<group>"; };
 		5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EveningViewModel.swift; path = ../../../../../../EveningViewModel.swift; sourceTree = "<group>"; };
 		5CE3BEEA2A06CD0D0038E8B5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = "../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/GoalReacher/GoalReacher/Views/LoginView.swift"; sourceTree = "<group>"; };
@@ -104,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5C50F0EF2A07AA7700711196 /* Extensions.swift */,
+				5CCF85932A0EEC1600CF11CB /* NotificationManager.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -182,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				5C884E202A058E500071BFE8 /* GoalReacherVM.swift */,
-				5CE3BEE22A06CB340038E8B5 /* AddNewViewModel.swift */,
 				5CE3BEE42A06CB4F0038E8B5 /* MorningViewModel.swift */,
 				5CE3BEE62A06CB6F0038E8B5 /* EveningViewModel.swift */,
 				5CE3BEEE2A06CE0F0038E8B5 /* ProfileViewModel.swift */,
@@ -300,9 +300,9 @@
 				5CE3BEF72A06E61C0038E8B5 /* GRButton.swift in Sources */,
 				5C884E182A05366E0071BFE8 /* MorningView.swift in Sources */,
 				5C50F0F22A07AEB600711196 /* ContentViewModel.swift in Sources */,
+				5CCF85942A0EEC1600CF11CB /* NotificationManager.swift in Sources */,
 				5C884E1E2A0588DC0071BFE8 /* AddNew.swift in Sources */,
 				5CE3BEF32A06DB8B0038E8B5 /* RegisterView.swift in Sources */,
-				5CE3BEE32A06CB340038E8B5 /* AddNewViewModel.swift in Sources */,
 				5C077D062A0D41B10020E726 /* MustDoTodayViewModel.swift in Sources */,
 				5CE3BEED2A06CDF20038E8B5 /* ProfileView.swift in Sources */,
 				5C884E1A2A0536860071BFE8 /* EveningView.swift in Sources */,

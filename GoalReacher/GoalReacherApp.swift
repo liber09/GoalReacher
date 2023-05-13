@@ -15,6 +15,7 @@ struct GoalReacherApp: App {
     @StateObject var MorningVM = MorningViewModel()
     @StateObject var EveningVM = EveningViewModel()
     @StateObject var StatisticsVM = StatisticsViewModel()
+    @ObservedObject var notificationManager =  NotificationManager()
     init() {
         FirebaseApp.configure()
     }
@@ -22,7 +23,7 @@ struct GoalReacherApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: viewModel, MustDoTodayVM: MustDoTodayVM, MorningVM: MorningVM, EveningVM: EveningVM, StatisticsVM: StatisticsVM)
+            ContentView(viewModel: viewModel, MustDoTodayVM: MustDoTodayVM, MorningVM: MorningVM, EveningVM: EveningVM, StatisticsVM: StatisticsVM, notificationManager: notificationManager)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
