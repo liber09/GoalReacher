@@ -18,6 +18,7 @@ class StatisticsViewModel: ObservableObject {
     let db = Firestore.firestore()
     let auth = Auth.auth()
     
+    //Get date range for statistics view
     func getDateRange(selectedDate: Date, range: String) -> [Date] {
             
             let calendar = Calendar(identifier: .iso8601)
